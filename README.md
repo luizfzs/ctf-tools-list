@@ -7,3 +7,4 @@
 ### Images
 * ImageStegano Tool: https://github.com/varunon9/Image-Stegano
   * check bit planes
+* steghide
