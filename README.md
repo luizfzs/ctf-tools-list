@@ -1,5 +1,9 @@
 # Tools and resources I have used on CTF's and Challenges
 
+## Enumerating
+### Linux
+* LinEnum: https://github.com/rebootuser/LinEnum
+
 ## Steganography
 ### MP3
 * Spectrum analyzer: https://academo.org/demos/spectrum-analyzer/
