@@ -36,3 +36,6 @@
 $ echo "import pty; pty.spawn('/bin/bash')" > /tmp/shell.py
 $ python shell.py
 ```
+## sudo tips
+> sudo -u username command
+to run 'command' as 'username'
